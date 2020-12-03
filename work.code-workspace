@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\frontend\\All CSS\\captain marvel card hover"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "Direction Aware Image Hover Effects"
+	}
+}

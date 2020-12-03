@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Direction Aware Image Hover Effects</title>
+
+  <!-- Default CSS Files -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Default JavaScript Files and Core JQuery Scripts -->
+  <script src="./app.js"></script>
+  <script src="./jquery-3.3.1.slim.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <span></span>
+      <div class="imgbx">
+        <img src="./img1.jpg" alt="">
+      </div>
+      <div class="content">
+        <div>
+          <h2>Card Title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tempora modi magni voluptatum eaque numquam neque reiciendis eum dolorum dicta.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <span></span>
+      <div class="imgbx">
+        <img src="./img2.jpg" alt="">
+      </div>
+      <div class="content">
+        <div>
+          <h2>Card Title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tempora modi magni voluptatum eaque numquam neque reiciendis eum dolorum dicta.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <span></span>
+      <div class="imgbx">
+        <img src="./img3.jpg" alt="">
+      </div>
+      <div class="content">
+        <div>
+          <h2>Card Title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tempora modi magni voluptatum eaque numquam neque reiciendis eum dolorum dicta.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function() {
+  $('.card').on('mouseenter', function(e) {
+    x = e.pageX - $(this).offset().left,
+    y = e.pageY - $(this).offset().top;
+    $(this).find('span').css({top:y, left:x})
+  })
+  $('.card').on('mouseout', function(e) {
+    x = e.pageX - $(this).offset().left,
+    y = e.pageY - $(this).offset().top;
+    $(this).find('span').css({top:y, left:x})
+  })
+})
+  </script>
+</body>
+</html>
